@@ -1,0 +1,263 @@
+/******************************************************************
+Site Name: HTML5/CSS3 for SFCC - Summer 2013
+Author: Brianna Kirkland
+
+Stylesheet: Typography
+
+Sitewide typography styles. Global definitions - device independent.
+It's called right after the site stylesheet.
+******************************************************************/
+	
+/*********************
+FONT-FACE DECLARATIONS
+*********************/
+
+/* 	To embed your own fonts, use this syntax
+	and place your fonts inside the 
+	fonts folder. For more information
+	on embedding fonts, go to:
+	http://www.fontsquirrel.com/
+	Be sure to remove the comment brackets.
+*/
+
+/*	@font-face {
+    	font-family: 'Font Name';
+    	src: url('../fonts/font-name.eot');
+    	src: url('../fonts/font-name.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/font-name.woff') format('woff'),
+             url('../fonts/font-name.ttf') format('truetype'),
+             url('../fonts/font-name.svg#font-name') format('svg');
+    	font-weight: normal;
+    	font-style: normal;
+	}
+*/
+
+// Contra (Body Text)
+
+@font-face {
+    font-family: 'ContraRegular';
+    src: url('../fonts/contra-webfont.eot');
+    src: url('../fonts/contra-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/contra-webfont.woff') format('woff'),
+         url('../fonts/contra-webfont.ttf') format('truetype'),
+         url('../fonts/contra-webfont.svg#ContraRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ContraItalic';
+    src: url('../fonts/contra-italic-webfont.eot');
+    src: url('../fonts/contra-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/contra-italic-webfont.woff') format('woff'),
+         url('../fonts/contra-italic-webfont.ttf') format('truetype'),
+         url('../fonts/contra-italic-webfont.svg#ContraItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+// Droid Sans Mono (Code Text)
+
+@font-face {
+    font-family: 'DroidSansMonoRegular';
+    src: url('../fonts/DroidSansMono-webfont.eot');
+    src: url('../fonts/DroidSansMono-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DroidSansMono-webfont.woff') format('woff'),
+         url('../fonts/DroidSansMono-webfont.ttf') format('truetype'),
+         url('../fonts/DroidSansMono-webfont.svg#DroidSansMonoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* 
+use the best ampersand 
+http://simplebits.com/notebook/2008/08/14/ampersands-2/
+*/
+span.amp {
+  font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif;
+  font-style: italic;
+}
+
+
+/*********************
+HEADINGS
+*********************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin : 0;
+font-family : $baseheadingfont;
+font-weight : $baseheadingfontweight;
+color : $baseheadingfontcolor;
+text-rendering : optimizelegibility; }
+
+h1 small,
+h2 small {
+font-weight : normal;
+color : $lightgrey; }
+
+h1,
+.h1 {
+margin-bottom : $baselineheight / 2;
+line-height : 1.2; 
+font-size: $basefontsize * 2;  //  24/16 = 1.5
+@include texthighlight; }
+
+h2,
+.h2 {
+font-family: $baseheadingfont;
+/* margin-bottom : $baselineheight / 2; */
+font-size: $basefontsize * 1.5;  //  24/16 = 1.5
+line-height : 1.2; }
+
+h3,
+.h3 {
+/* margin-bottom : $baselineheight / 1.5; */
+font-size: $basefontsize * 1.3125;  //  21/16 = 1.3125
+line-height : 1.3; }
+
+h4,
+.h4 {
+margin-bottom : $baselineheight;
+font-size: $basefontsize * 1.125;  //  18/16 = 1.125
+line-height : 1.25; }
+
+h5,
+.h5 {
+font-size: $basefontsize;  // 16 px
+margin-bottom : $baselineheight; }
+
+h6,
+.h6 {
+margin-bottom : $baselineheight;
+font-size: $basefontsize * 0.875;  //  14/16 = 0.875
+font-weight : normal;
+letter-spacing : 1px;
+text-transform : uppercase; }
+
+
+/*********************
+CONTENT STYLES
+*********************/
+p,
+ol,
+ul,
+dl,
+address {
+margin-bottom : $baselineheight;
+font-size: $basefontsize * 0.875;  //  14/16 = 0.875
+line-height : $baselineheight; }
+
+small {
+font-size: $basefontsize * 0.625;  //  10/16 = 0.625 
+}
+
+ul,
+ol {
+margin : 0 0 $baselineheight #{-$gutterwidth};
+padding : 0 0 0 $gutterwidth; }
+
+li ul,
+li ol {
+margin : 0;
+font-size: $basefontsize; }
+
+// blockquote
+
+blockquote  {
+margin : 0 0 $baselineheight #{-$gutterwidth};
+padding-left : $gutterwidth;
+border-left : 2px solid $bordercolor;
+font-family : $altfont;
+font-style : normal; }
+
+q {
+quotes : none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+content : '';
+content : none; }
+
+cite {
+font-style : normal; }
+
+// definition lists
+
+dl,
+dd {
+margin-bottom : $baselineheight;  }
+
+dt {
+font-weight : bold; }
+
+.dl-horizontal {
+
+dt {
+float : left;
+clear : left;
+width : 20.25%;
+text-align : right; }
+
+dd {
+margin-left : 22.78%; }
+}
+
+// text-level
+
+abbr[title] {
+border-bottom : 1px dotted $bordercolor;
+cursor : help; }
+
+b, strong {
+font-weight : bold; }
+
+dfn {
+font-style : italic; }
+
+ins {
+background-color : lighten($basecolor, 75%);
+color : $textcolor;
+text-decoration : none; }
+
+mark {
+background-color : lighten($basecolor, 75%);
+color : $textcolor;
+font-style : italic;
+font-weight : bold; }
+
+pre,
+code,
+kbd,
+samp {
+font-family : $codefont;
+font-size: $basefontsize * 0.875;  //  14/16 = 0.875
+line-height : $baselineheight; }
+
+pre {
+white-space : pre;
+white-space : pre-wrap;
+word-wrap : break-word; }
+
+sub,
+sup {
+position : relative;
+font-size: $basefontsize * 0.75;  //  12/16 = 0.75
+line-height : 0;
+vertical-align : baselineheight; }
+
+sup {
+top : -.5em; }
+
+sub {
+bottom : -.25em; }

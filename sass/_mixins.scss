@@ -1,0 +1,279 @@
+/******************************************************************
+Site Name: HTML5/CSS3 for SFCC - Summer 2013
+Author: Brianna Kirkland
+
+Stylesheet: Mixins
+
+These are used throughout the site and contain things like 
+CSS3 techniques, buttons, forms, grid info, ect. It's called 
+right after the variables stylesheet.
+******************************************************************/
+
+/*********************
+CLEARFIXIN'
+*********************/
+
+/* Contain floats: nicolasgallagher.com/micro-clearfix-hack/ */ 
+.clearfix { 
+	&:before,
+	&:after {
+		content: "";
+    	display: table;
+	}
+	&:after {
+		clear: both;
+	}
+	zoom: 1; 
+}
+
+/*********************
+TOOLS
+*********************/
+
+/* http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/ */
+.image-replacement {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/* text alignment */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+
+/* alerts & notices */
+.alert { 
+	margin: 10px; 
+	padding: 5px 18px; 
+	border: 1px solid; 
+}
+
+.help { 
+	border-color: darken($dijon, 5%); 
+	background: $dijon; 
+}
+
+.info { 
+	border-color: darken($slate, 5%); 
+	background: $slate; 
+}
+
+.error { 
+	border-color: darken($brick, 5%); 
+	background: $brick; 
+}
+
+.success { 
+	border-color: darken($olive, 5%); 
+	background: $olive; 
+} 
+
+/*********************
+BORDER RADIUS
+*********************/
+
+/* @include borderRadius(4px); */
+@mixin borderRadius($radius: 4px) {
+	-webkit-border-radius: $radius;
+	   -moz-border-radius: $radius;
+	    -ms-border-radius: $radius;
+   	     -o-border-radius: $radius;
+	        border-radius: $radius;
+}
+
+/* @include borderTopRadius(4px); */
+@mixin borderTopRadius($radius: 4px) {
+	-webkit-border-top-right-radius: $radius;
+	-webkit-border-top-left-radius: $radius;
+	-moz-border-radius-topright: $radius;
+	-moz-border-radius-topleft: $radius;
+	border-top-right-radius: $radius;
+	border-top-left-radius: $radius;
+}
+
+/* @include borderRightRadius(4px); */
+@mixin borderRightRadius($radius: 4px) {
+	-webkit-border-top-right-radius: $radius;
+	-webkit-border-bottom-right-radius: $radius;
+	-moz-border-radius-topright: $radius;
+	-moz-border-radius-bottomright: $radius;
+	border-top-right-radius: $radius;
+	border-bottom-right-radius: $radius;
+}
+
+/* @include borderBottomRadius(4px); */
+@mixin borderBottomRadius($radius: 4px) {
+	-webkit-border-bottom-right-radius: $radius;
+	-webkit-border-bottom-left-radius: $radius;
+	-moz-border-radius-bottomright: $radius;
+	-moz-border-radius-bottomleft: $radius;
+	border-bottom-right-radius: $radius;
+	border-bottom-left-radius: $radius;
+}
+
+/* @include borderLeftRadius(4px); */
+@mixin borderLeftRadius($radius: 4px) {
+	-webkit-border-top-left-radius: $radius;
+	-webkit-border-bottom-left-radius: $radius;
+	-moz-border-radius-topleft: $radius;
+	-moz-border-radius-bottomleft: $radius;
+	border-top-left-radius: $radius;
+	border-bottom-left-radius: $radius;
+}
+
+/*********************
+SHAPES
+*********************/
+
+.diamond {
+   width: $baselineheight * 2; 
+   height: $baselineheight * 2; 
+   background: $olive;
+   border: 2px solid $slate;
+   margin: -1em $gutterwidth $baselineheight $gutterwidth;
+   padding: .05em;
+   float: left;
+   /* Rotate */
+   -webkit-transform: rotate(-45deg);
+   -moz-transform: rotate(-45deg);
+   -ms-transform: rotate(-45deg);
+   -o-transform: rotate(-45deg);
+   transform: rotate(-45deg);
+   /* Rotate Origin */
+   -webkit-transform-origin: 0 100%;
+   -moz-transform-origin: 0 100%;
+   -ms-transform-origin: 0 100%;
+   -o-transform-origin: 0 100%;
+   transform-origin: 0 100%;
+}
+
+
+/*********************
+TRANISTION
+*********************/
+
+/* @include transition(all,2s,ease-out); */
+@mixin transition($what: all, $time: 0.2s, $how: ease-out) {
+	-webkit-transition: $what $time $how;
+	   -moz-transition: $what $time $how;
+ 	    -ms-transition: $what $time $how;
+	     -o-transition: $what $time $how;
+	        transition: $what $time $how;
+}
+@mixin pagetransition {
+	-webkit-transition: all .6s ease-in-out;
+	-moz-transition: all .6s ease-in-out;
+	-o-transition: all .6s ease-in-out;
+	-ms-transition: all .6s ease-in-out;
+	transition: all .6s ease-in-out;
+}
+
+/*********************
+CSS3 GRADIENTS
+Be careful with these since they can 
+really slow down your CSS. Don't overdue it.
+*********************/
+
+/* @include css-gradient(#dfdfdf,#f8f8f8); */
+@mixin css-gradient($from: $darkgrey, $to: $lightergrey) {
+	background-color: $to;
+	background-image: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+	background-image: -webkit-linear-gradient(top, $from, $to);
+	background-image: -moz-linear-gradient(top, $from, $to);
+	background-image: -o-linear-gradient(top, $from, $to);
+	background-image: -ms-linear-gradient(top, $from, $to);
+	background-image: linear-gradient(top, $from, $to);
+}
+
+/*********************
+BOX SIZING
+*********************/
+
+/* @include boxSizing(border-box); */
+@mixin boxSizing($type: border-box) {
+	-webkit-box-sizing: $type;
+	   -moz-box-sizing: $type;
+		-ms-box-sizing: $type;
+	     -o-box-sizing: $type; 
+			box-sizing: $type; 
+}
+
+/*********************
+BOX SHADOW
+*********************/
+
+/* @include boxShadow(0 0 4px #444); */
+@mixin boxShadow($x: 0, $y: 0, $radius: 4px, $spread: 0, $color: rgba(0,0,0,0.5)) {
+	-webkit-box-shadow: $x $y $radius $spread $color;
+	   -moz-box-shadow: $x $y $radius $spread $color;
+		-ms-box-shadow: $x $y $radius $spread $color;
+	     -o-box-shadow: $x $y $radius $spread $color; 
+			box-shadow: $x $y $radius $spread $color; 
+}
+
+/*********************
+MULTIPLE BOX SHADOWS
+*********************/
+//*currently unused*
+/* @include box-shadow(5px, 5px, 10px, #000); */
+@mixin box-shadow($shadow-1,
+  $shadow-2: false, $shadow-3: false,
+  $shadow-4: false, $shadow-5: false,
+  $shadow-6: false, $shadow-7: false,
+  $shadow-8: false, $shadow-9: false)
+  {
+    $full: compact($shadow-1, $shadow-2, $shadow-3, $shadow-4,
+                   $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9);
+
+  -webkit-box-shadow: $full;
+     -moz-box-shadow: $full;
+      -ms-box-shadow: $full;
+       -o-box-shadow: $full;
+          box-shadow: $full;
+}
+
+/*********************
+TEXT SHADOWS
+*********************/
+
+@mixin texthighlight {
+	text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+}
+@mixin textshadow {
+	text-shadow: 1px 1px 1px rgba(0,0,0, .75);
+}
+
+/*********************
+BUTTONS
+*********************/
+
+.button, .button:visited {
+	border: $buttonborderwidth $buttonborderstyle $buttonbordercolor;
+	padding: 4px 12px;
+	color: $white;
+	display: inline-block;
+	font-size: inherit;
+	font-weight: inherit;
+	text-decoration: none;
+	cursor: pointer;
+	margin-bottom: $gutterwidth;
+	line-height: $baselineheight;
+	@include textshadow;
+	@include css-gradient($salmon, darken($salmon, 5%));
+
+
+	&:hover, &:focus {
+		color: $white;
+	  	border: 1px solid darken($salmon, 13%);
+	  	border-top-color: darken($salmon, 20%);
+	 	border-left-color: darken($salmon, 20%);
+		@include css-gradient(darken($salmon, 5%), darken($salmon, 10%));
+	}
+	
+	&:active {
+		@include css-gradient(darken($salmon, 5%), $salmon);
+	}	
+}
+

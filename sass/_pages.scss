@@ -1,0 +1,39 @@
+/******************************************************************
+Site Name: HTML5/CSS3 for SFCC - Summer 2013
+Author: Brianna Kirkland
+
+Stylesheet: Pages
+
+Vendor specific styles for the page slider technique.  It's called 
+last after the forms stylesheet.
+******************************************************************/
+.content{
+	left: 21%;
+	top: 0px;
+	position: absolute;
+	padding-bottom: $gutterwidth;
+}
+
+.panel{
+	width: 68%;
+	min-height: 100%;
+	position: absolute;
+	margin-left: -1999px;
+    z-index: 2;
+    @include pagetransition;
+}
+.panel:target{
+    margin-left: 0%;
+}
+
+#intro:target ~ header nav #link-intro,
+#wk1:target ~ header nav #link-wk1,
+#wk2:target ~ header nav #link-wk2,
+#wk3:target ~ header nav #link-wk3,
+#wk4:target ~ header nav #link-wk4{
+	border: 1px solid darken($olive, 13%);
+  	border-top-color: darken($olive, 20%);
+ 	border-left-color: darken($olive, 20%);	
+	@include css-gradient(darken($olive, 5%), $olive);
+	
+}

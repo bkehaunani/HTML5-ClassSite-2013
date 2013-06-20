@@ -1,0 +1,203 @@
+/******************************************************************
+Site Name: HTML5/CSS3 for SFCC - Summer 2013
+Author: Brianna Kirkland
+
+Stylesheet: Site
+
+These are site-wide, device-independent, global styles. It's 
+called right after the mixins stylesheet.
+******************************************************************/
+
+
+/*********************
+VIEWPORTS
+*********************/
+
+@-webkit-viewport { 
+width : device-width; }
+
+@-moz-viewport { 
+width : device-width; }
+
+@-ms-viewport { 
+width : device-width; }
+
+@-o-viewport { 
+width : device-width; }
+
+@viewport { 
+width : device-width; }
+
+/*********************
+ROOT STYLES
+*********************/
+
+html {
+background: url(../images/diamonds.png) fixed, url(../images/whitedenim.jpg) $grey scroll;
+font-size : $basefontsize;
+-webkit-overflow-scrolling : touch;
+-webkit-tap-highlight-color : lighten($basecolor, 75%);
+-webkit-text-size-adjust : 100%;
+-ms-text-size-adjust : 100%; }
+
+body {
+margin : 0;
+padding : 0;
+width : 100%;
+font-family : $basefont;
+line-height : $baselineheight;
+color : $textcolor; }
+
+/*********************
+TEXTURE
+*********************/
+
+::selection {
+	background: lighten($dijon, 30%);
+	color: $black;
+}
+::-moz-selection {
+	background: lighten($dijon, 30%);
+	color: $black;
+}
+
+/*********************
+LINK STYLES
+*********************/
+
+a:link,
+a:visited {
+	color: $linkcolor;
+	text-decoration: none;
+	@include transition;
+}
+
+a:hover,
+a:active {
+	color: $linkcolorhover;
+	text-decoration: none;
+}
+
+
+/*********************
+LAYOUT
+*********************/
+
+header{
+	position: absolute;
+	z-index: 2000;
+	width: 18%;
+	top: 1%;
+	margin-top: 2%;
+	h1 {  //fittext isn't working??
+	margin: 1% auto;
+	text-align: center;}
+	p {
+	font-size: $basefontsize * 0.75;  //  12/16 = 0.75
+	font-weight: bold;}
+}
+nav {
+	margin: $gutterwidth;
+	width: 80%;
+	display:block;
+	list-style:none;
+	z-index:3;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	ul {
+	width: 100%;
+	li {
+	width:100%;
+	text-align: center;
+	}}
+}
+a.button {
+		color: $white;
+	}
+article {	
+	position: relative;
+	width: 100%;
+	/* background: url(../images/diamonds.png) fixed, url(../images/whitedenim.jpg) $grey scroll; */
+	height: 100%;
+	p {margin-top: 0;}
+}
+section{
+	background: url(../images/whitedenim.jpg) scroll;
+	border: 3px solid $dijon;
+	outline: 3px solid $olive;
+	width: 60%;
+	padding: $baselineheight;
+	margin: 0 auto;
+	h2 {
+	clear: left;
+	margin-left: $baselineheight * 2;
+	border-bottom: 2px solid $slate;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	}
+	h3 {
+	clear: left;
+	}
+	ul {
+	margin: 0 0 0 5px;
+	margin-bottom : $baselineheight;
+	ul {
+	margin: 0 0 0 15px;
+	}}
+}
+.maincontent {
+	width: 66%;
+}
+#intro p:nth-child(4) {
+	margin-bottom: 0;
+}
+
+aside {
+	margin: 0 $gutterwidth;
+	padding: $baselineheight;
+	background: $dijon;
+	background: rgba(193, 179, 115, 0.8);
+	border: 1px solid $olive;
+	font-size: .8em;
+	line-height: 1.2em;
+	box-shadow: 1px 1px 3px $olive;
+	h3{
+		border-bottom: 2px solid $slate;
+		text-align: center;}
+	ul {
+		margin: 0 auto $gutterwidth;
+	}
+}
+.sidebar {
+	width: 24%;
+	float: right;	
+}
+.courseinfo {
+	width: 80%;
+}
+
+
+footer {
+	clear: both;
+	width: 100%;
+	margin: 1em auto;
+	
+}
+
+/*********************
+VENDOR-SPECIFIC  
+*********************/
+
+
+
+/*********************
+ MODERNIZR 
+*********************/
+
+
+
+/*********************
+TEMPLATE SPECIFICS
+*********************/
+

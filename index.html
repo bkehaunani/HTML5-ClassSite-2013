@@ -1,0 +1,579 @@
+<!doctype html>
+
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><html class="no-js" lang="en"><![endif]-->
+
+<head>
+
+	<!-- activate Google Chrome Frame if Installed -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>SFCC Media Arts Seminar: HTML5 and CSS3</title>
+	
+	<!-- seo meta stuff -->
+	<meta name="description" content="Class webpage for SFCC's Media Arts Seminar:HTML5/CSS3 - Summer 2013 Instructor: Brianna Kirkland">
+	<meta name="author" content="Brianna Kirkland">
+	
+	<!-- mobile meta -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- favicons & icons -->
+	<!-- For iPhone 4 -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon.png">
+	<!-- For iPad 1-->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon.png">
+	<!-- For the new iPad -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144-precomposed.png">
+	<!-- For iPhone 3G, iPod Touch and Android -->
+	<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-precomposed.png">
+	<!-- For Nokia -->
+	<link rel="shortcut icon" href="images/apple-touch-icon.png">
+	<!-- For everything else -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+		
+	<!-- loading stylesheets -->
+	<link rel="stylesheet" href="css/style.css"> 
+
+	<!--[if (lt IE 9) & (!IEMobile)]>
+		<link rel="stylesheet" href="css/ie.css">
+	<![endif]-->
+	
+	<!-- typekit or google web font scripts -->
+  	
+	<!-- custom modernizr minified -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+	
+</head>
+
+<body class="clearfix">
+	
+	<article role="main" class="clearfix">
+	
+	
+	
+		<section id="intro" class="content">
+		<aside class="sidebar">
+	   		<h3 class="h4">Class Materials</h3>
+	   		<ul>
+	   			<li><a href="files/HTML5-Outline-2013.pdf">Course Outline</a></li>
+	   			<li><a href="files/HTML5-Syllabus-2013.pdf">Syllabus</a></li>
+	   			<li><a href="http://thehtml5herald.com/" target="_blank">The HTML5 Herald</a></li>
+	   			<li><a href="files/htmlcss1-code.zip">HTML5 Herald Source Files</a></li>
+	   			<li><a href="http://sfcc.purplepaisleyproductions.com/html5/sum2013/face" target="_blank">Class Practice Site</a></li>
+	   			<li><a href="files/sample-site.zip">Source Files for Practice Site</a></li>
+	   		</ul>
+	   		<h3 class="h4">Code Reference</h3>
+	   		<ul>
+	   			<li><a href="http://html5please.com/" target="_blank">HTML5 Please</a></li>
+	   			<li><a href="http://www.html5rocks.com/en/" target="_blank">HTML5 Rocks!</a></li>
+	   			<li><a href="http://www.w3schools.com/html/default.asp" target="_blank">HTML5 Tag Reference from the W3C Schools</a></li>
+	   			<li><a href="http://reference.sitepoint.com/html" target="_blank">SitePoint HTML Reference</a></li>
+	   			<li><a href="http://www.sitepoint.com/books/htmlcss1/errata.phpl" target="_blank">HTML5 Real World - Book Corrections and Errata</a></li>
+	   			<li><a href="http://www.abookapart.com/products/html5-css3-bundle" target="_blank">HTML5 and CSS3 for Web Designers, from A Book Apart</a></li>
+	   		</ul>
+	   		<h3 class="h4">Videos</h3>
+	   		<ul>
+	   			<li><a href="http://youtu.be/SUVIE-t_Y1c" target="_blank">The Future Web</a></li>
+	   			<li><a href="http://youtu.be/mzPxo7Y6JyA" target="_blank">What is HTML5?</a></li>
+	   		</ul>
+	   		</aside>
+
+		<div class="maincontent">
+   		<h3>Class Objective</h3>
+   		<p>This course is for students familiar with HTML &amp; CSS who want to learn the latest
+	   		generation of browser-based technologies associated with HTML5. Topics covered
+	   		include new structural and semantic elements of HTML5, native containers for audio
+	   		and video, styling and animations with CSS3, accessibility considerations, differences in
+	   		browser implementation, and an introduction to the power of JavaScript API's.</p>
+   		<h3>Learning Outcomes</h3>
+   		<p>At the conclusion of this course, the student should be able to:</p>
+   		<ul>
+   			<li>Use new HTML5 elements to effectively structure a webpage's contents for optimal accessibility and semantic meaning.</li>
+   			<li>Utilize new CSS selectors for improved targeting control with minimal markup.</li>
+   			<li>Style pages using CSS techniques without relying on presentational images.</li>
+   			<li>Employ progressive enhancement techniques for optimal user experience.</li>
+   			<li>Understand how to use of boilerplates & frameworks to start new projects.</li>
+   			<li>Be familiar with the related technologies associated with HTML5.</li>
+   		</ul>
+   		<h3>Major Topics</h3>
+   		<ul>
+   			<li>Changes to HTML Markup</li>
+   			<li>HTML5 Semantics</li>
+   			<li>HTML5 Forms</li>
+   			<li>New CSS3 Selectors and Color Values</li>
+   			<li>New CSS3 Style Techniques</li>
+   			<li>CSS3 Transitions and Transforms</li>
+   			<li>HTML5 Audio and Video</li>
+   			<li>Using JavaScript for Feature Detection & Polyfill Support</li>
+   			<li>Using CSS Media Queries</li>
+   			<li>Using Boilerplates and Frameworks</li>
+   			<li>Advanced Topics: Geolocation, Offline Caching/Apps, Canvas Element</li>
+   		</ul>
+   		</div><!-- end .maincontent -->
+   			   
+   		<footer role="contentinfo" class="footer">
+			<div class="links"><a href="http://www.w3.org/html/logo/"><img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-graphics-multimedia-semantics.png" width="229" height="64" alt="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, Multimedia, and Semantics" title="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, Multimedia, and Semantics"></a>
+			</div>
+		</footer>
+		
+   		</section><!-- end #intro -->
+   		
+   		
+   		
+   		<section id="wk1" class="panel content">
+   			<aside class="sidebar">
+	   		<h3 class="h4">Code Reference</h3>
+	   		<ul>
+	   			<li><a href="http://html5please.com/" target="_blank">HTML5 Please</a></li>
+	   			<li><a href="http://www.html5rocks.com/en/" target="_blank">HTML5 Rocks!</a></li>
+	   			<li><a href="http://www.w3schools.com/html5/html5_reference.asp" target="_blank">HTML5 Tag Reference from the W3C Schools</a></li>
+	   			<li><a href="http://reference.sitepoint.com/html" target="_blank">SitePoint HTML Reference</a></li>
+	   			<li><a href="http://www.sitepoint.com/books/htmlcss1/errata.phpl" target="_blank">HTML5 Real World - Book Corrections and Errata</a></li>
+	   			<li><a href="http://www.abookapart.com/products/html5-css3-bundle" target="_blank">HTML5 and CSS3 for Web Designers, from A Book Apart</a></li>
+	   		</ul>
+	   		<h3 class="h4">Tutorials and Articles</h3>
+	   		<ul>
+	   		   	<li><a href="http://www.html5rocks.com/en/tutorials/forms/html5forms/" target="_blank">Making Forms Fabulous with HTML5</a></li>
+	   		</ul>
+	   		<h3 class="h4">Videos</h3>
+	   		<ul>
+	   			<li><a href="http://youtu.be/SUVIE-t_Y1c" target="_blank">The Future Web</a></li>
+	   			<li><a href="http://youtu.be/mzPxo7Y6JyA" target="_blank">What is HTML5?</a></li>
+	   			<li><a href="http://youtu.be/DyA64xRvGHg" target="_blank">An Overview of HTML5</a></li>
+	   			<li><a href="http://youtu.be/YlqbWSDuung" target="_blank">HTML5 Structure</a></li>
+	   			<li><a href="http://youtu.be/3paTSCQayXw" target="_blank">HTML5 General Tag Use</a></li>
+	   			<li><a href="http://youtu.be/z4K-TghDUr4" target="_blank">HTML5 Forms Part 1</a></li>
+	   			<li><a href="http://youtu.be/z9eU9tuF7F8" target="_blank">HTML5 Forms Part 2</a></li>
+	   		</ul>
+	   		</aside>
+   		
+	   		<div class="maincontent">
+		   		<h2>Week 1</h2>
+		   		<h4 class="diamond text-center"><time datetime="06062013">June<br /><span>6<sup>th</sup></span></time></h4>
+	   
+	   
+		   <h3>Introducing HTML5!</h3>
+			<ul>
+				<li>What exactly is HTML5?</li>
+				<ul>
+					<li>Everything new in HTML, CSS & Javascript API's</li>
+				</ul>
+				<li>Why use it?</li>
+				<ul>
+					<li>Semantics & accessibility</li>
+					<li>Progressive enhancement</li>
+					<li>Responsive Web Design</li>
+				</ul>
+				<li>Syntax Changes</li>
+				<ul>
+					<li>code case insensitive</li>
+					<li>self closing tags</li>
+					<li>wrap block elements in anchor tag</li>
+					<li>ease of validation</li>
+				</ul>
+				<li>Content Models</li>
+				<ul>
+					<li>Metadata</li>
+					<li>Flow</li>
+					<li>Sectioning</li> 
+					<li>Heading</li>
+					<li>Phrasing</li>
+					<li>Embedded</li>
+					<li>Interactive</li>
+				</ul>
+				<li>When will it be ready?</li>
+				<ul>
+					<li>Use it right now! Incorporate new features as they are developed.</li>
+				</ul>
+			</ul>
+	
+		
+			<h3>Let's start using it!</h3>
+			<ul>
+			<li>The New HTML Template</li>
+			<ul>
+				<li>Doctype</li>
+				<li>HTML element</li>
+				<li>Head element</li>
+			</ul>
+			<li>New Structure Elements</li>
+			<ul>
+				<li>Header</li>
+				<li>Section</li>
+				<li>Article</li>
+				<li>Nav</li>
+				<li>Aside</li>
+				<li>Footer</li>
+			</ul>
+			<li>More New Elements &amp; Changes to Existing Elements</li>
+			<ul>
+				<li>Figure &amp; Figcaption</li>
+				<li>Time</li>
+				<li>Details</li>
+				<li>Mark, progress, meter, Deprecated: bold, italicized; New usage of big &amp; small, and customized ordered lists</li>
+			</ul>
+			<li>HTML5 Forms</li>
+			<ul>
+				<li>New Form Attributes: required, placeholder</li>
+				<li>New Input Types: search, email addresses, URLs, telephone numbers</li>
+				<li>Changes to Existing Elements: textareaa</li>
+			</ul>
+			</ul>
+			
+			<h3>Homework</h3>
+			<ul>
+				<li>Read Chapters 1 - 4</li>
+				<li>Download the <a href="files/sample-site.zip">source files</a> for the class project.</li>
+				<li>Reformat the <em>HTML structure</em> of the page to utilize HTML5 features and elements.</li>
+				<li>Get creative! Use as many new HTML5 elements as you can. There's no right or wrong way to do it.</li>
+				<li><strong>Note:</strong> You do not need to worry about altering any of the CSS styling or JavaScript.</li>
+				<li>Send a zip file of the site by email to: <a href="mailto:brianna.kirkland@sfcc.edu">brianna.kirkland@sfcc.edu</a> by <time datetime="06122013T12:00:00">Wednesday, June 12th at Noon.</time></li>
+				<li>If you still have time, brush up on your knowledge of CSS. Specifically focus on CSS selectors, and how the cascade works.</li>
+			</ul>
+			
+	   		</div><!-- end .maincontent -->
+	   		
+	   		<footer role="contentinfo" class="footer">
+			<div class="links"><a href="http://www.w3.org/html/logo/"><img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-graphics-multimedia-semantics.png" width="229" height="64" alt="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, Multimedia, and Semantics" title="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, Multimedia, and Semantics"></a>
+			</div>
+		</footer>
+	   </section><!-- end #wk1 -->
+	   
+	   
+	   
+	   
+	   <section id="wk2" class="panel content">
+	   <aside class="sidebar">
+	   		<h3 class="h4">Class Materials</h3>
+	   		<ul>
+	   			<li><a href="files/CSSexample.zip">CSS Selector Examples</a></li>
+	   			<li><a href="http://sfcc.purplepaisleyproductions.com/html5/sum2013/face/index2.html" target="_blank">Class Practice Site - Converted to HTML5</a></li>
+	   		</ul>
+	   		<h3 class="h4">Code Reference</h3>
+	   		<ul>
+	   			<li><a href="http://html5please.com/" target="_blank">HTML5 Please</a></li>
+	   			<li><a href="http://www.html5rocks.com/en/" target="_blank">HTML5 Rocks!</a></li>
+	   			<li><a href="http://www.w3schools.com/html5/html5_reference.asp" target="_blank">HTML5 Tag Reference from the W3C Schools</a></li>
+	   			<li><a href="http://reference.sitepoint.com/html" target="_blank">SitePoint HTML Reference</a></li>
+	   			<li><a href="http://www.css3.info/" target="_blank">CSS3 Info</a></li>
+	   			<li><a href="http://css3please.com/" target="_blank">CSS3 Please</a></li>
+	   		</ul>
+	   		<h3>Tutorials and Articles</h3>
+	   		<ul>
+   			<li><a href="http://tympanus.net/codrops/" target="_blank">Codrops Tutorials Website</a></li>
+   			<li><a href="http://www.sitepoint.com/new-properties-and-values-in-backgrounds-with-css3/#fbid=jnjFx8pkVMq" target="_blank">New Background Properties and Values</a></li>
+   			<li><a href="http://www.sitepoint.com/mastering-css3-multiple-backgrounds/#fbid=jnjFx8pkVMq" target="_blank">Mastering Multiple Backgrounds</a></li>
+   			<li><a href="http://webdesignernotebook.com/css/remembering-the-css3-multi-column-layout-module/" target="_blank">Multi-Column Layout</a></li>
+	   		<li><a href="http://mobile.smashingmagazine.com/2010/07/19/how-to-use-css3-media-queries-to-create-a-mobile-version-of-your-website/" target="_blank">Using Media Queries to Optimize for Mobile</a></li><!--
+
+	   		<li><a href="http://www.sitepoint.com/a-primer-on-css3-transforms/#fbid=jnjFx8pkVMq" target="_blank">Primer on CSS Transforms</a></li>
+	   		<li><a href="http://blogs.msdn.com/b/eternalcoding/archive/2011/11/01/css3-transitions.aspx" target="_blank">An Introduction to CSS3 Transitions</a></li>
+	   		<li><a href="http://blogs.msdn.com/b/davrous/archive/2011/12/06/introduction-to-css3-animations.aspx" target="_blank">An Introduction to CSS3 Animations</a></li>
+-->
+
+   		</ul>
+	   		<h3 class="h4">Videos</h3>
+	   		<ul>
+	   			<li><a href="http://youtu.be/o8xYgYA9pFw" target="_blank">CSS3 Overview</a></li>
+	   			<li><a href="http://youtu.be/VqWe0AH5O04" target="_blank">RGBA Color</a></li>
+	   			<li><a href="http://youtu.be/97qPqVcMYgk" target="_blank">Vendor Prefixes</a></li>
+	   			<li><a href="http://youtu.be/k_JOWOqP7zk" target="_blank">Drop Shadows</a></li>
+	   		</ul>
+	   		<h3>Resources</h3>
+	   		<ul>
+	   		<li><a href="http://dowebsitesneedtobeexperiencedexactlythesameineverybrowser.com" target="_blank">
+	   			Do websites need to be experienced exactly the same in every browser?</a></li>
+   			<li><a href="http://www.colorpicker.com/" target="_blank">ColorPicker.com</a></li>
+   			<li><a href="http://css3pie.com/" target="_blank">CSS3 Pie Website</a></li>
+   			<li><a href="http://www.css3shapes.com/" target="_blank">CSS3 Shapes</a></li>
+   			<li><a href="http://westciv.com/tools/gradients/" target="_blank">CSS3 Gradient Generator</a></li>
+	   		<li><a href="http://gradients.glrzad.com/" target="_blank">Another CSS3 Gradient Generator</a></li>
+	   		<li><a href="http://www.fontsquirrel.com/fontface" target="_blank">Font Squirrel's @font-face kits</a></li>
+	   		</ul>
+	   		</aside>
+
+	   
+		 <div class="maincontent">
+		 <h2>Week 2</h2>
+		 <h4 class="diamond text-center"><time datetime="06132013">June<br /><span>13<sup>th</sup></span></time></h4>
+		  <h3>Hello, CSS3!</h3>
+		  <ul>
+		  	<li>Getting All Browsers on Board</li>
+		  	<ul>
+		  		<li>User experiences can differ across browsers</li>
+		  		<li>Concept of Progressive Enhancement</li>
+		  		<li>Applying default styling to new elements</li>
+		  	</ul>
+		  	<li>Selectors</li>
+		  	<ul>
+			  	<li>relational</li>
+			  	<li>attribute</li>
+			  	<li>Pseudo-classes</li>
+			  	<li>Structural Pseudo-classes</li>
+			  	<li>Pseudo-elements and Generated Content</li>
+		  	</ul>
+		  	<li>CSS3 Colors: RGBA, HSL & HSLA, Opacity</li>
+		  	<li>Vendor Prefixes</li>
+		  	<li>Rounded corners</li>
+		  	<li>Drop Shadows: Inset & Multiple</li>
+		  	<li>Text Shadows</li>
+		  	<li>Gradients</li>
+		  	<li>Multiple BG Images</li>
+		  	<li>Background Size</li>
+		  	<li>@font-face</li>
+		  	<ul>
+		  		<li>Font Licensing Issues</li>
+		  		<li>Generating @font-face Kits</li>
+		  		<li>Other Services for Web Typography</li>
+		  	</ul>
+		  	<li>Multi-column layouts</li>
+		  	<li>Media Queries</li>
+		  	<ul>
+		  		<li>The World of RWD</li>
+		  	</ul>
+		  </ul>
+		  
+		  <h3>Homework</h3>
+			<ul>
+				<li>Read Chapters 6, 7 &amp; 9</li>
+				<li>Continue working on the class project you started from last class.</li>
+				<li>Try out some of the new CSS3 techniques, and selectors.</li>
+				<li>Get creative! You can try to recreate the design exactly as is, or give it a face-lift if you'd like.</li>
+				<li>Try to see if you can get the hang of some of the new fancy selectors, but don't drive yourself crazy trying to apply every one.</li>
+				<li>If you want to give @font-face a shot, <a href="files/font-face-kit-Umbridge.zip">download the kit</a> and see if you can get it working. Look at the demo files included for hints, and start at page 197 in the book for the full discussion of how it works.</li>
+				<li>Try your hand at a media query. You don't have to redesign the whole layout, but make some kind of changes to the styling at a different viewport size.</li>
+				<li>Send a zip file of the site by email to: <a href="mailto:brianna.kirkland@sfcc.edu">brianna.kirkland@sfcc.edu</a> by <time datetime="06192013T12:00:00">Wednesday, June 19th at Noon.</time></li>
+			</ul>
+
+		 </div><!-- end .maincontent -->
+		 
+		 <footer role="contentinfo" class="footer">
+			<div class="links"><a href="http://www.w3.org/html/logo/"><img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-graphics-multimedia-semantics.png" width="229" height="64" alt="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, Multimedia, and Semantics" title="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, Multimedia, and Semantics"></a>
+			</div>
+		</footer>
+	   </section><!-- end #wk2 -->
+	   
+	   
+	   
+	   
+	   <section id="wk3" class="panel content">
+	   
+	    <aside class="sidebar">
+	   		<h3 class="h4">Class Materials</h3>
+	   		<ul>
+	   			<li><a href="files/mediatest.zip">Audio & Video Examples</a></li>
+	   			<li><a href="http://css3exp.com/code/view/" target="_blank">Things We Left on the Moon</a></li>
+	   			<li><a href="files/css3fwd-code.zip">Moon Site Code</a></li>
+	   			<li><a href="http://www.abookapart.com/products/css3-for-web-designers" target="_blank">CSS3 for Web Designers</a></li>
+	   		</ul>
+	   		<h3 class="h4">Resources</h3>
+	   		<ul>
+	   			<li><a href="http://www.online-convert.com/" target="_blank">Online File Type Converter</a></li>
+	   			<li><a href="http://www.mirovideoconverter.com/" target="_blank">Miro Video Converter</a></li>
+	   			<li><a href="https://github.com/" target="_blank">GitHub</a></li>
+	   			<li><a href="http://html5boilerplate.com/" target="_blank">The HTML5 Boilerplate</a></li>
+	   			<li><a href="http://html5bones.com/" target="_blank">HTML5 Bones</a></li>
+	   			<li><a href="http://twitter.github.io/bootstrap/" target="_blank">Twitter Bootstrap</a></li>
+	   			<li><a href="http://stuffandnonsense.co.uk/projects/320andup/" target="_blank">320 and Up</a></li>
+	   			<li><a href="http://sass-lang.com/" target="_blank">SASS</a></li>
+	   			<li><a href="http://lesscss.org/" target="_blank">LESS</a></li>
+	   			<li><a href="http://incident57.com/codekit/" target="_blank">CodeKit</a></li>
+	   			<li><a href="http://livereload.com/" target="_blank">LiveReload</a></li>
+	   		</ul>
+	   		<h3>Tutorials & Articles</h3>
+	   		<ul>
+		   		<li><a href="http://www.sitepoint.com/a-primer-on-css3-transforms/#fbid=jnjFx8pkVMq" target="_blank">Primer on CSS Transforms</a></li>
+		   		<li><a href="http://blogs.msdn.com/b/eternalcoding/archive/2011/11/01/css3-transitions.aspx" target="_blank">An Introduction to CSS3 Transitions</a></li>
+		   		<li><a href="http://blog.alexmaccaw.com/css-transitions" target="_blank">All You Need to Know About CSS Transitions</a></li>
+		   		<li><a href="http://blogs.msdn.com/b/davrous/archive/2011/12/06/introduction-to-css3-animations.aspx" target="_blank">An Introduction to CSS3 Animations</a></li>
+		   		<li><a href="http://css-tricks.com/sass-vs-less/" target="_blank">SASS vs LESS</a></li>
+	   		</ul>
+	   		<h3>Videos</h3>
+	   		<ul>
+	   			<li><a href="http://stuffandnonsense.co.uk/content/demo/madmanimation/" target="_blank">Mad Manimation</a></li>
+	   			<li><a href="http://daftpunk.themaninblue.com/" target="_blank">Daft Punk Mashup</a></li>
+		   		<li><a href="http://youtu.be/gkggfNSMFfI" target="_blank">Rich Media in HTML5: Audio Part 1</a></li>
+	   			<li><a href="http://youtu.be/jfsM5XVcnSI" target="_blank">Rich Media in HTML5: Audio Part 2</a></li>
+	   			<li><a href="http://youtu.be/8U_SwwQEuo4" target="_blank">Basic Scripting with the Audio Tag</a></li>
+	   			<li><a href="http://youtu.be/6FyU3gkcS3M" target="_blank">Rich Media in HTML5: Video</a></li>
+	   			<li><a href="http://youtu.be/FxoMdtrXgyc" target="_blank">CSS3 Transitions</a></li>
+	   			<li><a href="http://css-tricks.com/video-screencasts/126-using-modernizr/" target="_blank">Using Modernizr</a></li>
+	   			<li><a href="http://css-tricks.com/video-screencasts/111-get-yourself-preprocessing-in-just-a-few-minutes/" target="_blank">Get Yourself Preprocessing in Just a Few Minutes</a></li>
+	   		</ul>
+	    </aside>
+	   
+		   <div class="maincontent">
+		    <h2>Week 3</h2>
+		   	<h4 class="diamond text-center"><time datetime="06202013">June<br /><span>20<sup>th</sup></span></time></h4>
+		   <h3>More Bells &amp; Whistles</h3>
+		   
+		   <ul>
+		   	<li>HTML5 Audio and Video</li>
+		   	<ul>
+		   		<li>History & Current State of Play</li>
+		   		<li>Markup & Custom Controls</li>
+		   	</ul>
+		   	<li>Changing Things with CSS Transforms</li>
+		   	<ul>
+		   		<li>Translation</li>
+		   		<li>Scaling</li>
+		   		<li>Rotation</li>
+		   		<li>Skew</li>
+		   	</ul>
+		   	<li>Smoothing Out the Changes with CSS Transitions</li>
+		   	<ul>
+		   		<li>Transition Property</li>
+		   		<li>Transition Duration</li>
+		   		<li>Transition Timing Function</li>
+		   		<li>Transition Delay</li>
+		   		<li>The Shorthand Property</li>
+		   		<li>Multiple Transitions</li>
+		   	</ul>
+		   	<li>Animating with CSS</li>
+		   	<ul>
+		   		<li>Keyframes</li>
+		   		<li>Animation Properties</li>
+		   		<li>The Shorthand Property</li>
+		   	</ul>
+		   </ul>
+		   
+		   <h3>Putting it All Into Practice</h3>
+		   <ul>
+		   	<li>The Benefits of Boilerplates & Frameworks</li>
+		   	<ul>
+		   		<li>HTML5 Boilerplate</li>
+		   		<li>Bones for HTML</li>
+		   		<li>Twitter Bootstrap</li>
+		   		<li>320 &amp; Up</li>
+		   	</ul>
+		   	<li>Finding and Following Code on GitHub</li>
+		   	<li>Understanding Conditional Comments</li>
+		   	<li>Using Modernizer for Feature Detection</li>
+		   	<li>Managing the CSS: Introducing CSS Preprocessors</li>
+		   	<ul>
+		   		<li>SASS is Like CSS on Steroids</li>
+		   		<li>Or You Can Choose to Use LESS</li>
+		   		<li>Tools for Compiling SASS/LESS</li>
+		   	</ul>
+		   </ul>
+		   <!--
+<h3>Homework</h3>
+			<ul>
+				<li>Read Chapters 5 &amp; 8</li>
+				<li>This week's project is worth <strong> 2 points</strong> folks. Make sure to turn it in to pass this class!</li>
+				<li>I want you to flex your coding muscles and take the class sample site to a new level.</li>
+				<li>Add at least one additional page to the site.</li>
+				
+
+				<li>Send a zip file of the site by email to: <a href="mailto:brianna.kirkland@sfcc.edu">brianna.kirkland@sfcc.edu</a> by <time datetime="06262013T12:00:00">Wednesday, June 26th at Noon.</time></li>
+			</ul>
+-->
+		   </div><!-- end .maincontent -->
+		   
+		   <footer role="contentinfo" class="footer">
+			<div class="links"><a href="http://www.w3.org/html/logo/"><img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-graphics-multimedia-semantics.png" width="229" height="64" alt="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, Multimedia, and Semantics" title="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, Multimedia, and Semantics"></a>
+			</div>
+		</footer>
+	   </section><!-- end #wk3 -->
+	   
+	   
+	   
+	   
+	   <section id="wk4" class="panel content">
+		   <div class="maincontent">
+		    <h2>Week 4</h2>
+		   	<h4 class="diamond text-center"><time datetime="06272013">June<br /><span>27<sup>th</sup></span></time></h4>
+		   <h3>Advanced Topics</h3>
+		   
+		   <ul>
+		   	<li>Web Workers</li>
+		   	<li>Geolocation</li>
+		   	<li>Offline Apps & Web Storage</li>
+		   	<li>Canvas & SVG</li>
+		   	<li>Drag & Drop</li>
+		   	<li>Where to Learn More</li>
+		   </ul>
+		   </div><!-- end .maincontent -->
+		   
+		   <footer role="contentinfo" class="footer">
+			<div class="links"><a href="http://www.w3.org/html/logo/"><img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-graphics-multimedia-semantics.png" width="229" height="64" alt="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, Multimedia, and Semantics" title="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, Multimedia, and Semantics"></a>
+			</div>
+		</footer>
+	   </section><!-- end #wk4 -->
+	   
+	   
+
+	   
+	   	
+
+	   	<header role="banner" class="header">
+		   	
+		  <aside class="courseinfo">
+		  <h1>HTML5/CSS3</h1>
+			  <h3 class="h4">Course Information</h3>
+			  <p>MART 194A-01 | CRN: 10672<br />
+				  Summer 2013 | Room 603<br />
+				  Thursdays, 1-3:45 p.m.<br />
+				  Instructor: <a href="mailto:brianna.kirkland@sfcc.edu" title="Email your instructor">Brianna Kirkland</a> </p>
+		  </aside>
+    
+		<nav>
+			<ul>
+				<li><a id="link-intro" href="#intro" class="button">intro</a></li>
+				<li><a id="link-wk1" href="#wk1" class="button">week 1</a></li>
+				<li><a id="link-wk2" href="#wk2" class="button">week 2</a></li>
+				<li><a id="link-wk3" href="#wk3" class="button">week 3</a></li>
+				<li><a id="link-wk4" href="#wk4" class="button">week 4</a></li>
+
+			</ul>
+		</nav>
+	</header>
+
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+
+
+
+	
+	</article><!-- end .content -->
+	
+	
+	
+		
+	
+	
+	<!-- Grab Google CDN's jQuery, without a fallback (if Google fails, the world will implode) -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		
+	<!-- scripts complied and minified for speed -->
+	<script src="js/scripts.js"></script>
+	<script src="js/jquery.fittext.js"></script>
+	<script type="text/javascript">
+		$("#fittext1").fitText();
+		$("#fittext2").fitText(1.2);
+		$("#fittext3").fitText(1.1, { minFontSize: '50px', maxFontSize: '75px' });
+	</script>
+
+	
+	<!-- below prompts IE6 users to install Google Chrome Frame -->
+	<!--[if lt IE 7 ]>
+    	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    	<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+	<![endif]-->
+  
+</body>
+
+</html> <!-- end page, what a ride! -->
