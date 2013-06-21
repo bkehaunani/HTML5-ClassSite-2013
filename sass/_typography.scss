@@ -7,71 +7,6 @@ Stylesheet: Typography
 Sitewide typography styles. Global definitions - device independent.
 It's called right after the site stylesheet.
 ******************************************************************/
-	
-/*********************
-FONT-FACE DECLARATIONS
-*********************/
-
-/* 	To embed your own fonts, use this syntax
-	and place your fonts inside the 
-	fonts folder. For more information
-	on embedding fonts, go to:
-	http://www.fontsquirrel.com/
-	Be sure to remove the comment brackets.
-*/
-
-/*	@font-face {
-    	font-family: 'Font Name';
-    	src: url('../fonts/font-name.eot');
-    	src: url('../fonts/font-name.eot?#iefix') format('embedded-opentype'),
-             url('../fonts/font-name.woff') format('woff'),
-             url('../fonts/font-name.ttf') format('truetype'),
-             url('../fonts/font-name.svg#font-name') format('svg');
-    	font-weight: normal;
-    	font-style: normal;
-	}
-*/
-
-// Contra (Body Text)
-
-@font-face {
-    font-family: 'ContraRegular';
-    src: url('../fonts/contra-webfont.eot');
-    src: url('../fonts/contra-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/contra-webfont.woff') format('woff'),
-         url('../fonts/contra-webfont.ttf') format('truetype'),
-         url('../fonts/contra-webfont.svg#ContraRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'ContraItalic';
-    src: url('../fonts/contra-italic-webfont.eot');
-    src: url('../fonts/contra-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/contra-italic-webfont.woff') format('woff'),
-         url('../fonts/contra-italic-webfont.ttf') format('truetype'),
-         url('../fonts/contra-italic-webfont.svg#ContraItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-// Droid Sans Mono (Code Text)
-
-@font-face {
-    font-family: 'DroidSansMonoRegular';
-    src: url('../fonts/DroidSansMono-webfont.eot');
-    src: url('../fonts/DroidSansMono-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/DroidSansMono-webfont.woff') format('woff'),
-         url('../fonts/DroidSansMono-webfont.ttf') format('truetype'),
-         url('../fonts/DroidSansMono-webfont.svg#DroidSansMonoRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 
 /* 
 use the best ampersand 
@@ -220,7 +155,9 @@ border-bottom : 1px dotted $bordercolor;
 cursor : help; }
 
 b, strong {
-font-weight : bold; }
+font-weight : 800;
+font-family: 'ContraItalic';
+text-transform: uppercase;}
 
 dfn {
 font-style : italic; }
